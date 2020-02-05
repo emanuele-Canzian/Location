@@ -1,4 +1,4 @@
-package com.example.LocationAPI.LocationAPI.SpringSecurityConfigurationBasicAuth;
+package com.example.SpringSecurityConfigurationBasicAuth;
 
 public class AuthenticationBean {
     private String message;

@@ -1,4 +1,4 @@
-package com.example.LocationAPI.LocationAPI.SpringSecurityConfigurationBasicAuth;
+package com.example.SpringSecurityConfigurationBasicAuth;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

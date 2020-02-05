@@ -1,20 +1,35 @@
 package com.example.LocationAPI.LocationAPI;
 
+
+import javax.persistence.*;
+import javax.persistence.Table;
 import java.util.Date;
 import java.util.Objects;
 
+@Entity
 public class Location {
 
-    private long id;
+    @Id
+    private Long id;
+
     private String username;
+
+    private String imageName;
+
     private String title;
+
     private String description;
+
     private Date targetDate;
 
-    public Location(long id, String username ,String title, String description, Date targetDate) {
-        super();
+    public Location() {
+
+    }
+
+    public Location(Long id, String username, String imageName, String title, String description, Date targetDate) {
         this.id = id;
         this.username = username;
+        this.imageName = imageName;
         this.title = title;
         this.description = description;
         this.targetDate = targetDate;
@@ -22,7 +37,7 @@ public class Location {
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, username ,title, description, targetDate);
+        return Objects.hash(id, username ,title, description, targetDate, imageName);
     }
 
     @Override
@@ -40,6 +55,7 @@ public class Location {
         return "Location{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
+                ", imageName='" + imageName + '\'' +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
                 ", targetDate=" + targetDate +
@@ -61,6 +77,14 @@ public class Location {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getImageName() {
+        return imageName;
+    }
+
+    public void setImageName(String imageName) {
+        this.imageName = imageName;
     }
 
     public String getTitle() {

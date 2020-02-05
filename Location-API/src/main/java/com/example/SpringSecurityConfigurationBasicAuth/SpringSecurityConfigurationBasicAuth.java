@@ -1,4 +1,4 @@
-package com.example.LocationAPI.LocationAPI.SpringSecurityConfigurationBasicAuth;
+package com.example.SpringSecurityConfigurationBasicAuth;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.context.annotation.Configuration;
