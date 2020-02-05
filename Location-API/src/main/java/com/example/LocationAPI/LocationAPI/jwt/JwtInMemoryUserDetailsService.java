@@ -1,14 +1,14 @@
-package com.example.meinProject.todo.Todo.jwt;
+package com.example.LocationAPI.LocationAPI.jwt;
 
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 @Service
 public class JwtInMemoryUserDetailsService implements UserDetailsService {
